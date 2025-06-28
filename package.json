@@ -1,0 +1,20 @@
+{
+  "name": "node-rate-limit",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Rate-Limiting"
+  ],
+  "author": "Saumyajeet Varma",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1"
+  }
+}

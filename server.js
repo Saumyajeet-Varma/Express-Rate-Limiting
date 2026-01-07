@@ -8,8 +8,8 @@ const app = express()
 
 const limiter = rateLimit({
     windowMs: process.env.RATE_LIMIT_WINDOW_MS || 60 * 1000,
-    max: RATE_LIMIT_MAX || 10,
-    message: RATE_LIMIT_MESSAGE || "Request limit exceeded"
+    max: process.env.RATE_LIMIT_MAX || 10,
+    message: process.env.RATE_LIMIT_MESSAGE || "Request limit exceeded"
 })
 
 app.use(limiter);
